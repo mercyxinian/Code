@@ -1,5 +1,3 @@
-# Code
-
 In our study, we identified and classified soil salinization degrees in the Western Songnen Plain at 100 m spatial resolution using ground surveys data and remote sensing imagery, combined with machine learning algorithms over the period 1985 to 2024.
 
 The publicly available data used in this paper, as well as the modeling code, are shown below:
