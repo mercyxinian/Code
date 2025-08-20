@@ -1,0 +1,24 @@
+clear all;
+im = imread('H:\TIR.tif');
+im1 = imread('H:\imgSIT.tif');
+im2 = imread('H:\imgPDI.tif');
+
+im=single(im);
+im1=single(im1);
+im2=single(im2);
+[r,c]=size(im);
+A1=reshape(im,r*c,1);  
+A2=reshape(im1,r*c,1); 
+A3=reshape(im2,r*c,1); 
+A=[A1 A2 A3];
+T=array2table(A,'VariableNames', {'B10','SIT','PDI'});
+load('H:\TIRSITPDI_predicted.mat');
+yfit = B10SITPDI.predictFcn(T);
+yfit1=single(yfit);
+B=reshape(yfit1(:,1),r,c); 
+result=single(B);
+imshow(result);
+filename='H:\imgSIT.tif';
+[C,R]=geotiffread(filename);
+info=geotiffinfo(filename);
+geotiffwrite('H:\LnEC_prediction_result.tif',result,R);
