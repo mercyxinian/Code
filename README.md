@@ -1,17 +1,6 @@
-In our study, we identified saline soil area and predicted soil salinity degrees in the Western Songnen Plain at 100 m spatial resolution using ground surveys data and remote sensing imagery, combined with machine learning algorithms over the period 1985 to 2024.
+A 40-year dataset of soil salinity dynamics (1985–2024) at 100 m resolution in the Western Songnen Plain, China
 
-The publicly available data used in this paper, as well as the modeling code, are shown below:
+Soil salinization leads to land degradation, reduced agricultural productivity, and heightened food security risks. Accurate assessment of saline soil distribution and severity is critical for sustainable land management. However, challenges such as broad spatial extent, high heterogeneity, and limited field observations hinder mapping accuracy. Existing datasets in China show large discrepancies in salinized area estimates due to coarse spatial and temporal resolution. In this study, we classified soil salinity degree across the western Songnen Plain from 1985 to 2024 using field surveys, remote sensing imagery, and machine learning algorithms, achieving high accuracy (overall accuracy = 0.893, Kappa = 0.782). A regional soil EC prediction model (R² = 0.467) was developed using 942 in situ samples and remotely sensed indicators, accounting for soil moisture effects. This model produced annual, 100 m resolution maps from 1985 to 2024, with only 2.78% deviation from the second National Land Survey.
+Custom code used for Saline soil Identification and Prediction model input parameters (TIR、SIT、PDI, run with Google Earth Engine (GEE)) ,Soil_EC_prediction_model (runs with Matlab) is available here.
 
-The remote sensing satellite data used in this study are freely available on GEE platform (available at https://code.earthengine.google.com/).
-
-Land cover data can be accessed at https://doi.org/10.5281/zenodo.4417810.
-
-SSSG dataset is available at  https://files.isric.org/public/global_soil_salinity.
-
-LDSS data are available at https://doi.org/10.6084/m9.figshare.13295918.v1. 
-
-Identification results of saline soils are available at https://code.earthengine.google.com/3dd47875d7455825297b9a6a8766a8ee.
-
-The data required for model inputs (TIR、SIT、PDI) are available at https://code.earthengine.google.com/7fc0e7ee2cf4cb6b744aaf4706a140c9.
-
-Saline soil Identification and Prediction model input parameters (TIR、SIT、PDI) run with Google Earth Engine (GEE).Soil_EC_prediction_model runs with Matlab.
+Data: Wang, B., Li, X., & Gao, Z. (2025). A 40-year dataset of soil salinity dynamics (1985–2024) at 100 m resolution in the Western Songnen Plain, China [Data set]. Zenodo. https://doi.org/10.5281/zenodo.17044260
